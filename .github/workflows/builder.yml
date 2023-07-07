@@ -26,7 +26,7 @@ jobs:
         id: set_tag_env
         run: |
           set -x
-          echo "TAG=$(echo ${{ github.event.inputs.Tag }} | xargs)" >> $GITHUB_ENV
+          echo "TAG=$(echo ${{ github.event.inputs.Tag }} | xargs)" >> $GITHUB_OUTPUT
 
       - name: Docker Login to Registry
         uses: docker/login-action@v2
