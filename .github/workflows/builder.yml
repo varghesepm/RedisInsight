@@ -39,4 +39,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ env.DOCKER_REGISTRY }}/${{ steps.set_tag_env.tag }}
+          tags: ${{ env.DOCKER_REGISTRY }}:${{ steps.set_tag_env.tag }}
